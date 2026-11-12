@@ -1,0 +1,3 @@
+-- SQLAlchemy creates batches, items, policies, runs, reviews, reports, users, audits on a new MySQL database.
+-- Amounts and amount tolerances use BIGINT. Non-monetary scoring parameters use DOUBLE.
+-- Unique(batch_id, external_id) prevents duplicate ledger IDs. Existing deployments need reviewed migrations.

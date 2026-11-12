@@ -1,0 +1,1 @@
+export const money=(value:unknown)=>{const n=Number(value||0);const a=Math.abs(n);return (n<0?"-":"")+Math.floor(a/100).toLocaleString("zh-CN")+"."+String(a%100).padStart(2,"0")};export const fixed=(v:unknown,n=2)=>Number(v||0).toFixed(n);

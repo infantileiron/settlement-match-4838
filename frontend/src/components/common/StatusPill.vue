@@ -1,0 +1,1 @@
+<script setup lang="ts">defineProps<{status:string}>();const labels:Record<string,string>={queued:"排队中",running:"计算中",completed:"匹配完成",infeasible:"配方不可行",failed:"计算失败",submitted:"待复核",approved:"已批准"}</script><template><span :class="['status',status]">{{labels[status]||status}}</span></template>

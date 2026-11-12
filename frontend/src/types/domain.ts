@@ -1,0 +1,1 @@
+export type Role="admin"|"analyst"|"viewer";export interface User{email:string;role:Role}export interface Entity{id:string;created_at:string;[key:string]:any}export interface MatchRow{stage:string;milestone_ids:string[];receipt_id:string;milestone_sum_cents:number;receipt_amount_cents:number;delta_cents:number;currency:string;party:string;score:number|null}
